@@ -320,15 +320,3 @@ def obtener_respuesta(pregunta):
     return "Disculpa, puedes reformular la pregunta?"
 
 
-print("Chat Norris: Hola, soy ChatNorris ¿En que podria ayudarte el dia de hoy?.")
-
-while True:
-    entrada_usuario = input("Tú: ")
-    entrada_usuario = normalizar_texto(entrada_usuario)
-    respuesta = obtener_respuesta(entrada_usuario)
-    print(f"Chat Norris: {respuesta}")
-
-    if respuesta in despedidas:
-        break  # Sale del bucle si la respuesta es una despedida
-
-print("Chat Norris: Conversación finalizada.")
